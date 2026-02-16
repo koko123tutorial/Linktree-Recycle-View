@@ -65,7 +65,8 @@ Digunakan untuk membuka URL di browser.
 
 ```kotlin
 data class LinkModel(
-    val title: String,
+    val social: Int,
+    val name: String,
     val url: String
 )
 ```
@@ -85,7 +86,7 @@ data class LinkModel(
 
 ```kotlin
 val linkList = listOf<LinkData>(
-               Logo Medsos      Nama           URL
+                Social         Name           URL
     LinkData("R.drawable.yt", "SeNau", "https://youtube.com"),
     LinkData("R.drawable.ig", "@SeNau", "https://instagram.com"),
     LinkData("R.drawable.wa", "SeNau", "https://wa.me/+000000000000.com"),
